@@ -1,0 +1,13 @@
+Montserrat
+400
+500
+600
+700
+800
+
+italic Montserrat
+500
+
+Manrope
+400
+600

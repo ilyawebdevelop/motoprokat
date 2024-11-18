@@ -1,0 +1,142 @@
+.contacts {
+  padding-bottom: 0;
+  margin-bottom: -10px;
+  &W {
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: 991px){
+      flex-direction: column;
+      row-gap: 40px;
+    }
+  }
+
+  .sectHead {
+    margin-bottom: 30px;
+  }
+
+  &Row {
+    margin-bottom: 25px;
+    font-family: var(--second-family);
+
+    &Name {
+      color: #2E3078;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.14px;
+      margin-bottom: 8px;
+
+      &--lg {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+    &Text {
+      color: #1C1C1C;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0.4px;
+
+      &:hover {
+        color: #2E3078;
+      }
+    }
+  }
+
+  &Form {  
+    position: relative;
+    &I {
+      position: relative;
+      z-index: 2;
+      box-shadow: 0px 1px 40px 0px rgba(0, 0, 0, 0.12);
+      background-color: #fff;
+      border-radius: 26px;
+      padding: 48px 40px 48px;
+      height: fit-content;
+      max-width: 525px;
+      width: 100%;
+      @media(max-width: 767px){
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: -80px;
+      top: -110px;
+      width: 715px;
+      height: 750px;
+      background: url('@img/contacts/form-bg.png');
+  
+      z-index: 1;
+      pointer-events: none;
+      @media(max-width: 991px){
+        top: -70px;
+        right: 85px;
+      }
+      @media(max-width: 767px){
+        right: 0px;
+        width: 534px;
+        height: 562px;
+        background: url('@img/contacts/form-sm-bg.png');
+      }
+      @media(max-width: 575px){
+        right: -100px;
+      }
+    }
+  }
+  &--pt {
+    padding-top: 200px;
+    @media(max-width: 991px){
+      padding-top: 60px;
+    }
+  }
+  &--page {
+    padding-top: 40px;
+    .contactsForm::before {
+      top: -64px;
+    }
+    .contactsForm {
+      margin-top: -70px;
+      padding-bottom: 50px;
+      @media(max-width: 991px){
+        margin-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+.map {
+  margin-top: -60px;
+  position: relative;
+  z-index: 0;
+  @media(max-width: 991px){
+    margin-top: 60px;
+  }
+  iframe {
+    width: 100%;
+    height: 420px;
+    position: relative;
+    z-index: 3;
+    @media(max-width: 767px){
+      height: 320px;
+    }
+  }
+  &--sm {
+    margin-top: 70px;
+    iframe {
+      height: 200px;
+    }
+  }
+}
+#map {
+  pointer-events: none;
+}
+#map.onScroll {
+  pointer-events: all;
+}

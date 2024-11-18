@@ -1,0 +1,8 @@
+.faq {
+  .sectHead {
+    margin-bottom: 40px;
+    @media(max-width: 991px){
+      margin-bottom: 30px;
+    }
+  }
+}

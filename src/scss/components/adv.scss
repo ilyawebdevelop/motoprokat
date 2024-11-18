@@ -1,0 +1,60 @@
+.adv {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  column-gap: 13px;
+  @media(max-width: 991px){
+    row-gap: 15px;
+  }
+  &Sect {
+    padding-top: 0;
+    position: relative;
+    z-index: 0;
+    margin-top: -45px;
+  }
+  &Card {
+    grid-column: 4 span;
+    border-radius: 12px;
+    background: #EEEFFF;    
+    padding: 24px;
+    @media(max-width: 991px){
+      grid-column: 6 span;
+    }
+    @media(max-width: 767px){
+      grid-column: 12 span;
+    }
+    &Num {
+      color: #2D3EFF;
+      font-family: 'Inter';
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 58px;     
+      border-radius: 20px;
+      background: #FFF;
+      box-shadow: 0px 4px 21.3px 0px rgba(46, 48, 120, 0.08);
+      width: fit-content;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      span {
+        transform: rotate(4.499deg);
+      }
+    }
+    &Title {
+      color: #2D3EFF;
+      font-family: 'Inter';
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 31px;     
+      margin-bottom: 5px;
+    }
+    &Text {
+      color: #000;
+      font-family: 'Inter';
+      font-weight: 400;
+      line-height: 21px; 
+    }
+  }
+}

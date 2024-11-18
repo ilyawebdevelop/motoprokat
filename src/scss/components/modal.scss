@@ -1,0 +1,140 @@
+// modal
+.modal {
+  display: none;
+  padding: 38px 40px 35px;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  height: fit-content; 
+  @media(max-width: 767px){
+    padding: 40px 18px;
+  }
+
+  &Title {
+    color: #000;
+    &--sm {        
+      font-size: 28px;
+      line-height: 33px; 
+      letter-spacing: -0.56px;      
+    }
+  }
+
+  .f-button {
+    right: 5px;
+    top: 5px;
+    border-top-right-radius: 10px;
+  }
+
+  .content {
+    p {
+      line-height: 20px;
+    }
+  }
+  .formInput {
+    &--purple {
+      color: #5941F6;
+      font-weight: 500;
+      &::placeholder {
+        color: #5941F6;
+      }
+    }
+  }
+  .formSelect {
+    &--purple {
+      color: #5941F6;
+      font-weight: 500;
+      &::placeholder {
+        color: #5941F6;
+      }
+    }
+  }
+  .tabs__nav {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    @media(max-width: 575px){
+      column-gap: 0;
+    }
+    &-item {
+      @media(max-width: 575px){
+        width: 50%;
+      }
+      &:nth-child(1){
+        .tabs__nav-btn {
+          width: 215px;
+          @media(max-width: 767px){
+            width: 280px;
+          }
+          @media(max-width: 575px){
+            width: 100%;
+          }
+        }
+      }
+      &:nth-child(2){
+        @media(max-width: 575px){
+          position: absolute;
+          right: 0;
+          width: calc(50% + 20px);
+        }
+        .tabs__nav-btn {
+          width: 265px;
+          position: absolute;
+          right: 0;
+          @media(max-width: 767px){
+            width: 50%;
+          }
+          @media(max-width: 575px){
+            position: unset;
+            width: 100%;
+          }
+        }
+      }
+    }
+    &-btn {
+      height: 68px;
+      background: rgba(0, 11, 225, 0.09);
+      color: #2D3EFF;
+
+      &--active {
+        background-color: #2D3EFF;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+      }     
+    }
+  }
+}
+
+.fancybox__backdrop {
+  background: rgba($color: #1E1E1E, $alpha: .62);
+}
+
+.modalOrder {
+  width: 525px;
+  border-radius: 26px;
+  background: #FFF;
+  box-shadow: 0px 1px 40px 0px rgba(0, 0, 0, 0.12);
+}
+.formSubtitle {
+  color: #2D3EFF;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -2%;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  @media(max-width: 767px){
+    text-align: center;
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+#modalCert {
+  .formTitle{
+    text-align: center;
+  }
+}

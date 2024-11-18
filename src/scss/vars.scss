@@ -1,0 +1,35 @@
+// Colors
+$main-color: #000;
+
+// Fonts
+$font-family: 'Montserrat', sans-serif;
+
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+ // Containers
+:root { 
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Manrope", sans-serif;
+  --content-width: 1820px;
+  --content-fluid-width: 1700px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  --black: #000;
+  --blue: #1A1D8A;
+  --purple: rgba(51, 61, 236, 0.15);
+  --button--gradient: linear-gradient(90deg, #543FF6 0%, #C563F6 100%);
+  --background: #f3f7fd;
+  --success: #27c340;
+  --error: #e02828;
+  --yellow: #ffc529;
+  --disabled: #c5cfdc;
+  --primary: #2f80ed;
+}

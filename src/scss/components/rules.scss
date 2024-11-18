@@ -1,0 +1,48 @@
+.rules {
+  .sectHead {
+    margin-bottom: 40px;
+  }
+  &Item {
+    border-radius: 8px;
+    border: 1px solid #2E3078;    
+    padding: 25px 22px 19px 25px;
+    max-width: 710px;
+    width: 100%;
+    margin-bottom: 19px;
+    &Head {
+      display: flex;
+      align-items: center;
+      column-gap: 17px;
+      @media(max-width: 575px){
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 15px;
+      }
+    }
+    &Count {
+      border-radius: 50px;
+      background: #2D3EFF;      
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFF;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 0%;
+      letter-spacing: -0.72px;      
+      flex-shrink: 0;
+    }
+    &Title {
+      color: #2D3EFF;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: -0.66px;      
+    }
+    &Text {
+      margin-top: 20px;
+    }
+  }
+}

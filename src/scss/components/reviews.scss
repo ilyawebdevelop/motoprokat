@@ -1,0 +1,84 @@
+.reviews {
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px 17px;
+    @media(max-width: 991px){
+      gap: 12px;
+    }
+  }
+
+  &Card {
+    grid-column: 4 span;
+    border-radius: 8px;
+    border: 1px dashed rgba(100, 68, 246, 0.40);
+    background: #FFF;
+    box-shadow: 0px 0px 6px 0px rgba(0, 11, 225, 0.09);
+    padding: 25px 24px 50px 32px;
+    @media(max-width: 991px){
+      grid-column: 6 span;
+    }
+    @media(max-width: 575px){
+      grid-column: 12 span;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-bottom: 30px;
+    }
+
+    &Head {
+      display: flex;
+      align-items: center;
+      column-gap: 14px;
+    }
+
+    &Icon {
+      background-color: #333DEC;
+      border-radius: 15px;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+
+      img {
+        width: 36px;
+      }
+    }
+
+    &Img {
+      width: 55px;
+      height: 55px;
+      border-radius: 15px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    &Name {
+      color: #2D3EFF;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: -0.66px;
+      margin-bottom: 1px;
+      @media(max-width: 575px){
+       font-size: 18px; 
+      }
+    }
+
+    &Cat {
+      color: #2D3EFF;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.48px;
+    }
+
+    &Text {
+      color: #000;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.48px;
+      margin-top: 9px;
+    }
+  }
+}

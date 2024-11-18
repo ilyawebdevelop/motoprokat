@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+			<div class="bg-decor">
+				@@include('html/main/intro.html',{})
+				@@include('html/main/consult.html',{})
+				@@include('html/main/program.html',{})
+				@@include('html/main/nature.html',{})
+				@@include('html/cert.html',{})
+			</div>
+			<div class="decor-line">
+				@@include('html/main/price.html',{})
+			</div>
+			@@include('html/main/news.html',{})
+			<div class="decor-line">
+				@@include('html/main/faq.html',{})		
+				@@include('html/contacts.html',{})	
+			</div>
+
+		</main>
+		@@include('html/footer.html',{})
+		@@include('html/modal.html',{})
+	</div>
+
+	<script src="js/accordion-anim.js"></script>
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

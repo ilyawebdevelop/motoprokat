@@ -1,0 +1,71 @@
+.consult {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  @media(max-width: 991px){
+    padding-bottom: 0;
+  }
+  &W {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 26px;
+    background: #FFF;
+    box-shadow: 0px 1px 40px 0px rgba(0, 11, 225, 0.09);
+    padding: 35px 40px;
+    margin-top: -150px;
+    position: relative;
+    @media(max-width: 1479px){
+      margin-top: 0;
+    }
+    @media(max-width: 575px){
+      margin-top: -300px;
+      padding-left: 17px;
+      padding-right: 17px;
+    }
+    // z-index: 1;
+  }
+  &Title {
+    color: #333;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43px; 
+    letter-spacing: -0.72px;    
+    margin-bottom: 6px;
+    @media(max-width: 767px){     
+      font-size: 26px;   
+      line-height: 31px; 
+      letter-spacing: -0.52px;      
+    }
+  }
+  &Descr {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.54px;
+    color: #4A4A4A;
+    margin-bottom: 25px;
+  }
+}
+.consultFormGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 9px;
+  position: relative;
+  z-index: 2;
+  @media(max-width: 991px){
+    row-gap: 9px;
+  }
+  .inputW {
+    grid-column: 4 span;
+    @media(max-width: 991px){
+      grid-column: 6 span;
+    }
+    @media(max-width: 575px){
+      grid-column: 12 span;
+    }
+    .button {
+      width: 100%;
+    }
+  }
+}

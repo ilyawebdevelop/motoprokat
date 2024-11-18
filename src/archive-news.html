@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Новости"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('html/header-no-intro.html',{})
+		<main class="main">
+			<div class="bg-decor">
+				@@include('html/news/list.html',{})
+			</div>
+		</main>
+		@@include('html/footer.html',{})
+		@@include('html/modal.html',{})
+	</div>
+
+	<script src="js/accordion-anim.js"></script>
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

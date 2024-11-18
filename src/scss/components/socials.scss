@@ -1,0 +1,13 @@
+.socials {
+  ul {
+    display: flex;
+    column-gap: 8px;
+    li {
+      a {
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+}

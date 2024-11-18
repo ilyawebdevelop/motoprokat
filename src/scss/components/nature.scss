@@ -1,0 +1,134 @@
+.nature {
+  padding-bottom: 130px;
+  @media(max-width: 767px){
+    padding-bottom: 80px;
+  }
+  .sectHead {
+    margin-bottom: 30px;
+  }
+  .h2 {
+    @media(max-width: 767px){
+      text-align: center;
+    }
+  }
+
+  &W {
+    display: flex;
+    column-gap: 40px;
+    margin-left: -80px;
+    @media(max-width: 1400px){
+      column-gap: 20px;
+    }
+    @media(max-width: 1295px){
+      flex-wrap: wrap;
+    }
+    @media(max-width: 575px){
+      margin-left: -30px;
+    }
+  }
+
+  &Card {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    position: relative;
+
+    &Img {
+      height: 130px;
+      object-fit: contain;
+      position: relative;
+      z-index: 1;
+      object-position: right;
+      height: 144px;
+
+      &W {
+        position: relative;      
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 118px;
+          height: 110px;
+          border-radius: 100px;
+          background-color: #2E3078;
+          transform: rotate(-75.186deg);
+          right: 0;
+          bottom: 10px;
+        }
+      }
+    }
+
+    &Title {
+      color: #2E3078;
+      font-family: 'Inter', sans-serif;
+      font-size: 30px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 36px;
+      @media(max-width: 991px){
+        font-size: 22px;
+        line-height: 26px;
+      }
+      @media(max-width: 405px){
+        font-size: 20px;
+        line-height: 25px;
+      }
+      @media(max-width: 369px){
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+
+    &:nth-child(1) {
+      @media(max-width: 575px){
+        margin-left: -18px;
+      }
+      @media(max-width: 355px){
+        margin-left: -40px;
+      }
+      .natureCardTitle {
+        max-width: 230px;
+      }
+      .natureCardImg {
+        min-width: 213px;
+      }
+    }
+
+    &:nth-child(2) {
+      @media(max-width: 991px){
+        margin-left: 7px;
+      }
+      @media(max-width: 575px){
+        margin-left: -10px;
+      }
+      @media(max-width: 355px){
+        margin-left: -30px;
+      }
+      .natureCardTitle {
+        max-width: 210px;
+      }
+      .natureCardImg {
+        min-width: 205px;
+      }
+    }
+
+    &:nth-child(3) {
+      @media(max-width: 1295px){
+        margin-left: 50px;
+      }
+      @media(max-width: 575px){
+        margin-left: 35px;
+      }
+      @media(max-width: 355px){
+        margin-left: 10px;
+      }
+      .natureCardTitle {
+        max-width: 280px;
+      }
+      .natureCardImg {
+        min-width: 160px;
+        height: 158px;
+      }
+    }
+  }
+}

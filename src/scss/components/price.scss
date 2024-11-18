@@ -1,0 +1,105 @@
+.price {
+  padding-top: 100px;
+  padding-top: 200px;
+  @media(max-width: 991px){
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  .tabs__nav {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    column-gap: 12px;
+    margin-bottom: 20px;
+    &-item {
+      @media(max-width: 575px){
+        width: calc(50% - 6px);
+        flex-shrink: 0;
+      }
+    }
+
+    &-btn {
+      background: rgba(0, 11, 225, 0.09);
+      color: #2D3EFF;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 61px;
+      height: 48px;
+      min-width: 170px;
+      border-radius: 13px;
+      @media(max-width: 575px){
+        min-width: unset;
+        width: 100%;
+      }
+
+      &--active {
+        background: #2D3EFF;
+        color: #fff;
+      }
+    }
+  }
+
+  &Params {
+    display: flex;
+    column-gap: 50px;
+    @media(max-width: 991px){
+      flex-direction: column;
+      row-gap: 14px;
+    }
+  }
+
+  &Param {
+    display: flex;
+    column-gap: 7px;
+
+    &Icon {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    &Title {
+      color: #000;    
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 21px; 
+    }
+  }
+
+  &Footer {
+    display: flex;
+    align-items: center;
+    border: 3px solid var(--w, #503DF6);
+    column-gap: 70px;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 10px;
+    max-width: 1290px;
+    margin-left: auto;
+    margin-right: auto;
+    @media(max-width: 991px){
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 20px;
+    }
+    @media(max-width: 575px){
+      margin-top: 30px;
+      padding-left: 22px;
+      padding-right: 22px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    &Title {
+      font-size: 24px;  
+      font-weight: 700;
+      line-height: 29px; 
+      background: var(--w, linear-gradient(90deg, #503DF6 0%, #C864F6 100%));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;      
+    }
+  }
+}
